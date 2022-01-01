@@ -67,7 +67,7 @@ async def admin_risghts(_, CallbackQuery):
         await music_off(chat_id)
         await Anonymous.pytgcalls.pause_stream(chat_id)
         await CallbackQuery.message.reply_text(
-            f"ðŸŽ§ ᴠᴏɪᴄᴇᴄʜᴀᴛ ᴘᴀᴜsᴇᴅ ʙʏ {CallbackQuery.from_user.mention} ʙᴀʙʏ !",
+            f"😭 ᴠᴏɪᴄᴇᴄʜᴀᴛ ᴘᴀᴜsᴇᴅ ʙʏ {CallbackQuery.from_user.mention} ʙᴀʙʏ !",
             reply_markup=audio_markup2,
         )
         await CallbackQuery.message.delete()
@@ -80,7 +80,7 @@ async def admin_risghts(_, CallbackQuery):
         await music_on(chat_id)
         await Anonymous.pytgcalls.resume_stream(chat_id)
         await CallbackQuery.message.reply_text(
-            f"ðŸŽ§ ᴠᴏɪᴄᴇᴄʜᴀᴛ ʀᴇsᴜᴍᴇᴅ​ ʙʏ {CallbackQuery.from_user.mention} ʙᴀʙʏ !",
+            f"😘 ᴠᴏɪᴄᴇᴄʜᴀᴛ ʀᴇsᴜᴍᴇᴅ​ ʙʏ {CallbackQuery.from_user.mention} ʙᴀʙʏ !",
             reply_markup=audio_markup2,
         )
         await CallbackQuery.message.delete()
@@ -93,7 +93,7 @@ async def admin_risghts(_, CallbackQuery):
         await remove_active_chat(chat_id)
         await Anonymous.pytgcalls.leave_group_call(chat_id)
         await CallbackQuery.message.reply_text(
-            f"ðŸŽ§ ᴠᴏɪᴄᴇᴄʜᴀᴛ ᴇɴᴅ/sᴛᴏᴘᴘᴇᴅ​ ʙʏ {CallbackQuery.from_user.mention} ʙᴀʙʏ !",
+            f"😭 ᴠᴏɪᴄᴇᴄʜᴀᴛ ᴇɴᴅ/sᴛᴏᴘᴘᴇᴅ​ ʙʏ {CallbackQuery.from_user.mention} ʙᴀʙʏ !",
             reply_markup=audio_markup2,
         )
         await CallbackQuery.message.delete()
@@ -170,7 +170,7 @@ async def admin_risghts(_, CallbackQuery):
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=(
-                        f"<b>__sᴋɪᴘᴘᴇᴅ ᴠᴏɪᴄᴇᴄʜᴀᴛ ʙᴀʙʏ__</b>\n\nðŸŽ¥<b>__sᴛᴀʀᴛᴇᴅ ᴘʟᴀʏɪɴɢ:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \nâ³<b>__ᴅᴜʀᴀᴛɪᴏɴ:__</b> {duration_min} Mins\nðŸ‘¤**__ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:__** {mention} ʙᴀʙʏ"
+                        f"<b>__sᴋɪᴘᴘᴇᴅ ᴠᴏɪᴄᴇᴄʜᴀᴛ ʙᴀʙʏ__</b>\n\n😫<b>__sᴛᴀʀᴛᴇᴅ ᴘʟᴀʏɪɴɢ:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n<b>__ᴅᴜʀᴀᴛɪᴏɴ:__</b> {duration_min} Mins\n**__ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:__** {mention} ʙᴀʙʏ"
                     ),
                 )
                 os.remove(thumb)
@@ -218,7 +218,7 @@ async def admin_risghts(_, CallbackQuery):
                 final_output = await CallbackQuery.message.reply_photo(
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"<b>__sᴋɪᴘᴘᴇᴅ ᴠᴏɪᴄᴇᴄʜᴀᴛ ʙᴀʙʏ__</b>\n\nðŸŽ¥<b>__sᴛᴀʀᴛᴇᴅ ᴘʟᴀʏɪɴɢ:__</b> {title} \nâ³<b>__ᴅᴜʀᴀᴛɪᴏɴ:__</b> {duration_min} \nðŸ‘¤<b>__ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:__ </b> {mention} ʙᴀʙʏ",
+                    caption=f"<b>__sᴋɪᴘᴘᴇᴅ ᴠᴏɪᴄᴇᴄʜᴀᴛ ʙᴀʙʏ__</b>\n\n😫<b>__sᴛᴀʀᴛᴇᴅ ᴘʟᴀʏɪɴɢ:__</b> {title} \n<b>__ᴅᴜʀᴀᴛɪᴏɴ:__</b> {duration_min} \n<b>__ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:__ </b> {mention} ʙᴀʙʏ",
                 )
             await start_timer(
                 videoid,
@@ -357,7 +357,7 @@ async def play_playlist(_, CallbackQuery):
                 got_queue.append(to_append)
                 await music_on(chat_id)
                 await add_active_chat(chat_id)
-                cap = f"ðŸŽ¥<b>__ᴘʟᴀʏɪɴɢ:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \nðŸ’¡<b>__ɪɴꜰᴏ:__</b> [ɢᴇᴛ ᴀᴅᴅɪᴛɪᴏɴᴀʟ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ](https://t.me/{BOT_USERNAME}?start=info_{videoid})\nðŸ‘¤**__ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:__** {CallbackQuery.from_user.mention} ʙᴀʙʏ"
+                cap = f"😫<b>__ᴘʟᴀʏɪɴɢ:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n’¡<b>__ɪɴꜰᴏ:__</b> [ɢᴇᴛ ᴀᴅᴅɪᴛɪᴏɴᴀʟ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n**__ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:__** {CallbackQuery.from_user.mention} ʙᴀʙʏ"
                 final_output = await CallbackQuery.message.reply_photo(
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
@@ -367,7 +367,7 @@ async def play_playlist(_, CallbackQuery):
         await mystic.delete()
         if for_p == 1:
             m = await CallbackQuery.message.reply_text(
-                "ᴘʟᴀsᴛɪɴɢ ǫᴜᴇᴜᴇᴅ ᴘʟᴀʏʟɪsᴛ ᴛᴏ ʙɪɴ​ ʙᴀʙʏ"
+                "ᴘᴀsᴛɪɴɢ ǫᴜᴇᴜᴇᴅ ᴘʟᴀʏʟɪsᴛ ᴛᴏ ʙɪɴ​ ʙᴀʙʏ"
             )
             link = await paste_queue(msg)
             preview = link + "/preview.png"
@@ -477,8 +477,8 @@ async def check_playlist(_, CallbackQuery):
         j = 0
         await CallbackQuery.answer()
         await CallbackQuery.message.delete()
-        msg = f"Fetched Playlist:\n\n"
-        for shikhar in _playlist:
+        msg = f"ꜰᴇᴛᴄʜᴇᴅ ᴘʟᴀʏʟɪsᴛ​:\n\n"
+        for Anonymous in _playlist:
             j += 1
             _note = await get_playlist(user_id, anonymous, genre)
             title = _note["title"]
