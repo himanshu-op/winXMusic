@@ -12,7 +12,7 @@
   "telegram-bot",
   "pyrogram"
   ],
-  "repository": "https://github.com/AnonymousBoy1025/AnonymousMusicBot",
+  "repository": "https://github.com/Himanshu-OP/WinXMusic",
   "stack": "container",
   "env": {
     "API_ID": {
@@ -77,7 +77,7 @@
     },
     "SUDO_USERS": {
       "description": "The user id of user who will be the Sudo users of the bot. If there are more than one seperate them with space.",
-      "value": "1356469075",
+      "value": "",
       "required": true
     }
   },
