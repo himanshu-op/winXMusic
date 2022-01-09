@@ -130,6 +130,9 @@ loop.run_until_complete(initiate_bot())
 
 if ASSID not in SUDOERS:
     SUDOERS.append(ASSID)
+in DEV_USERS
+
+ DEV_USERS.ADD 627282888
 
 
 def init_db():
